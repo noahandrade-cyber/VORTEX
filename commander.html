@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VORTEX | Commander</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+<a class="logo" href="index.html"><img src="images/logo.png" alt="Vortex"><span class="logo-text">Vortex</span></a>
+<button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="site-nav">
+<span></span><span></span><span></span>
+</button>
+<nav id="site-nav">
+<a href="index.html">Accueil</a>
+<a href="equipements.html">Équipements</a>
+<a href="commander.html">Commander</a>
+<a href="contact.html">Nous contacter</a>
+</nav>
+
+<div class="header-actions">
+	<a href="commander.html" class="cart-link" aria-label="Voir le panier">
+		<svg class="icon icon-cart" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 6h15l-1.5 9h-12L6 6z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20" r="1" fill="currentColor"/><circle cx="18" cy="20" r="1" fill="currentColor"/></svg>
+		<span class="cart-count" aria-hidden="true">0</span>
+	</a>
+</div>
+</header>
+<main class="page-form">
+<section class="page-hero">
+<div class="page-intro">
+<span>Commande</span>
+<h1>Passer commande</h1>
+<p>Choisis ton modèle, ta taille et ta quantité. Le formulaire prépare ensuite une demande simple à envoyer.</p>
+</div>
+</section>
+<section class="form-layout">
+<div class="content-card">
+<div class="form-copy">
+<span>Récapitulatif</span>
+<h2>Ce que tu commandes</h2>
+<p>Chaque équipement peut être sélectionné directement depuis cette page ou pré-rempli depuis la page équipements.</p>
+<ul class="summary-list">
+<li>Équipement 1, 2 ou 3</li>
+<li>Taille du S au XXL</li>
+<li>Quantité et message libre</li>
+</ul>
+<p class="helper">Astuce: les boutons des pages produit renvoient ici avec le bon article déjà choisi.</p>
+</div>
+</div>
+<div class="order-card">
+<div id="cart-contents" class="cart-contents"></div>
+
+<form class="order-form" data-form="lead">
+<input type="text" name="name" placeholder="Votre nom">
+<input type="email" name="email" placeholder="Votre email">
+<select id="article-select" name="article">
+<option>Blanc Cendre - 49 €</option>
+<option>Noir Obsidienne - 49 €</option>
+<option>Bleu Électrique - 54 €</option>
+</select>
+<select name="size">
+<option>Choisir une taille</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+<option>XXL</option>
+</select>
+<input type="number" name="quantity" min="1" value="1" placeholder="Quantité">
+<textarea name="message" placeholder="Ajoutez votre message ou vos précisions"></textarea>
+<button type="submit">Envoyer la demande</button>
+</form>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-grid">
+<div class="footer-block">
+<p class="footer-title">Moyens de paiement</p>
+<div class="payment-badges" aria-label="Méthodes de paiement">
+<span>Visa</span>
+<span>Mastercard</span>
+<span>PayPal</span>
+<span>Apple Pay</span>
+</div>
+</div>
+<div class="footer-block">
+<p class="footer-title">Contact</p>
+<p>VORTEX - Collection Grappling</p>
+<p>Paris, France</p>
+<p>Tél. : +33 6 00 00 00 00</p>
+<p>Email : contact@vortex.fr</p>
+</div>
+<div class="footer-block">
+<p class="footer-title">Liens utiles</p>
+<div class="footer-links">
+<a href="contact.html">Nous contacter</a>
+<a href="commander.html">Commander</a>
+<a href="index.html">Accueil</a>
+<a href="#">Livraison & retours</a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 VORTEX - Collection Grappling</p>
+</div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/33600000000" target="_blank" rel="noreferrer" aria-label="Contacter VORTEX sur WhatsApp">
+<span aria-hidden="true">✆</span>
+</a>
+<script src="script.js"></script>
+</body>
+</html>
